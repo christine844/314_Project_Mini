@@ -5,12 +5,13 @@ const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     database: 'event_management',
-    password: 'Whakker555',
+    password: 'password',
     port: 5432
 });
 
 // This allows for easy queries in other files.
 module.exports = {
     query: (text, params) => pool.query(text, params),
+    pool
 };
 

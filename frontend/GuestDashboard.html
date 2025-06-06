@@ -56,9 +56,34 @@
       
     </div>
 
+    <div id="register-modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-button" id="close-modal">&times;</span>
+        <h2>Register</h2>
+        <form id="registration-form">
+          <input type="hidden" id="event-id" />
+          <label>
+            Select Ticket Type:
+            <select id="ticket-type" required>
+              <option value="" disabled selected>Select ticket type</option>
+              <option value="Standard">Standard</option>
+              <option value="VIP">VIP</option>
+            </select>
+          </label>
+          <label>
+            Seat Selection:
+          </label>
+          <input type="text" id="seat" placeholder="Enter seat number" />
+          <label>
+            Additional Notes:
+            <textarea id="details" placeholder="Any dietary requirements or requests..."></textarea>
+          </label>
+          <button type="submit">Proceed to Payment</button>
+        </form>
+      </div>
+    </div>
 
 
-
-    <script src="JavaScript.js"></script>
+    <script src="guest-dashboard.js"></script>
   </body>
 </html>

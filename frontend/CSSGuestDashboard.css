@@ -163,6 +163,38 @@ main {
 
 /*Register for Event*/
 
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.close-button {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
 /*Payment*/
 

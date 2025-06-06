@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Processing</title>
+    <link rel="stylesheet" href="payment.css" />
+</head>
+<body>
+    <div class="payment-container" id="payment">
+              <h1>Payment</h1>
+        <p>Event Registration ID: <span id=registration-id-display></span></p>
+
+        <form id="payment-form">
+            <label>
+                Card Number:
+                <input type="text" placeholder="1234 5678 9012 3456" pattern="\d{4} \d{4} \d{4} \d{4}" required>
+            </label>
+            <label>
+                Expiry:
+                <input type="text" placeholder="MM/YY" pattern="\d{2}\/\d{2}" required />
+            </label>
+            <label>
+                CVV / CVC:
+                <input type="text" placeholder="123" pattern="\d{3}" required />
+            </label>
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+    <script src="payment.js"></script>
+</body>
+</html>

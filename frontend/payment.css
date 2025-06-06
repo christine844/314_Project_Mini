@@ -1,0 +1,37 @@
+.payment-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.payment-container h1 {
+  text-align: center;
+}
+
+.payment-container label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.payment-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.payment-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#message {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
